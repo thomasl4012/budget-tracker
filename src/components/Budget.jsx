@@ -2,10 +2,24 @@ import React, { useContext } from "react";
 import { AppContext } from "../context/AppContext";
 
 const Budget = () => {
-  const { budget } = useContext(AppContext);
+  const { budget, dispatch } = useContext(AppContext);
+
+  const handleChange = () => {
+    const value = prompt("Do you want to edit your budget ?");
+    if (value != null) {
+      dispatch({
+        type: "EDIT",
+        payload: value,
+      });
+    }
+  };
   return (
     <div className="alert alert-secondary">
-      <span> Budget : {budget}€</span>
+      <div> Budget : {budget}€</div>
+      <div className="btn btn-primary" onClick={handleChange}>
+        {" "}
+        Edit
+      </div>
     </div>
   );
 };
