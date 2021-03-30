@@ -29,7 +29,7 @@ const Expense = () => {
 
       <ul className="list-group">
         {expensesFiltered.map(({ id, name, cost }) => (
-          <ExpenseItem key={id} name={name} cost={cost} />
+          <ExpenseItem key={id} id={id} name={name} cost={cost} />
         ))}
       </ul>
     </div>
