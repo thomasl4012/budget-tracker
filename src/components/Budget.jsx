@@ -15,7 +15,7 @@ const Budget = () => {
   };
   return (
     <div className="alert alert-secondary">
-      <div> Budget : {budget}€</div>
+      <div className="mb-2"> Budget : {budget}€</div>
       <div className="btn btn-primary" onClick={handleChange}>
         {" "}
         Edit

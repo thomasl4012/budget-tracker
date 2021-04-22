@@ -20,7 +20,7 @@ const Expense = () => {
 
   return (
     <div className="m-4">
-      <div className="input-group mb-3 mr-3">
+      <div className="input-group mb-3 mr-3 ">
         <div className="input-group-prepend">
           <span className="input-group-text" id="inputGroup-sizing-default">
             Search
