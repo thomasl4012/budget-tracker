@@ -23,7 +23,7 @@ const AddExpenseForm = () => {
 
   return (
     <form onSubmit={onSubmit}>
-      <div className="row">
+      <div className="row ml-3 mr-3">
         <div className="col-sm col-lg-4">
           <label htmlFor="name">Name</label>
           <input

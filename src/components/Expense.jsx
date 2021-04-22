@@ -19,13 +19,20 @@ const Expense = () => {
   };
 
   return (
-    <div>
-      <input
-        className="form-control mb-3 mr-sm-3"
-        type="Search"
-        placeholder="Search expenses"
-        onChange={handleChange}
-      ></input>
+    <div className="m-4">
+      <div className="input-group mb-3 mr-3">
+        <div className="input-group-prepend">
+          <span className="input-group-text" id="inputGroup-sizing-default">
+            Search
+          </span>
+        </div>
+        <input
+          className="form-control"
+          type="Search"
+          placeholder="Search expenses"
+          onChange={handleChange}
+        ></input>
+      </div>
 
       <ul className="list-group">
         {expensesFiltered.map(({ id, name, cost }) => (
